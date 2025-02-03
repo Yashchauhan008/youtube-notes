@@ -1,0 +1,87 @@
+
+#notesMain {
+  background-color: transparent;
+  width: 100%;
+  height: 70px; /* Default height when popup is hidden */
+  transition: height 0.3s ease-in-out;
+}
+
+#noteBtn {
+  position: relative;
+  height: 50px;
+  width: 95%;
+  background-color: #212121;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 20px;
+  color: white;
+}
+
+#noteBtn:hover {
+  background-color: #21212193;
+}
+
+#notePopup {
+  position: relative;
+  width: 95%;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin-top: 10px; /* Ensure it appears right below the button */
+  display: none; /* Initially hidden */
+}
+
+#popupContent h3 {
+  margin: 0;
+  text-align: center;
+}
+
+#noteInput {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+#saveNote {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  background: orangered;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#saveNote:hover {
+  background: rgba(255, 68, 0, 0.713);
+}
+
+#noteList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#noteList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+#noteList button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
